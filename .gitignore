@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.env/
+
+# Data files (IGNORE THESE)
+data/raw/
+*.csv
+*.xlsx
+*.json
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Selenium downloads/temp
+downloads/
