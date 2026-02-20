@@ -579,3 +579,143 @@ Symbols not available. Dumping unresolved backtrace:
 2026-02-18 10:30:16,403 - INFO - Saved 4 jobs to data/raw/computer_science_mobile_application_developer.csv
 2026-02-18 10:30:26,841 - INFO - Page 1: No jobs found for 'Game Developer'
 2026-02-18 10:30:34,968 - INFO - Page 1: Found 2 jobs for 'Embedded Systems Engineer'
+2026-02-20 10:59:48,843 - INFO - Found 19 jobs for 'Software Engineer'
+2026-02-20 10:59:50,684 - INFO - Scraped: Software Engineer/ Developer
+2026-02-20 10:59:56,339 - INFO - Scraped: Cloud Engineer
+2026-02-20 11:00:03,317 - INFO - Scraped: Associated Brands Industries Ltd
+2026-02-20 11:00:09,441 - INFO - Scraped: Integration Developer (Temp)
+2026-02-20 11:00:13,015 - INFO - Scraped: The Barbados Light & Power Company
+2026-02-20 11:00:19,462 - INFO - Scraped: Development Support Analyst – Insurance Application Services
+2026-02-20 11:00:22,985 - INFO - Scraped: Sagicor Group Jamaica Ltd.
+2026-02-20 11:00:28,265 - INFO - Scraped: Lead - Software Quality Assurance Analyst
+2026-02-20 11:00:33,357 - INFO - Scraped: Project Manager
+2026-02-20 11:00:37,461 - INFO - Scraped: National Commercial Bank of Anguilla
+2026-02-20 11:00:44,210 - INFO - Scraped: SYSTEMS ADMINISTRATOR (MIS/IT 5)
+2026-02-20 11:00:47,061 - INFO - Scraped: The Casino Gaming Commission
+2026-02-20 11:00:50,207 - INFO - Scraped: DATA ENGINEER - ANSA McAL LIMITED
+2026-02-20 11:00:54,150 - INFO - Scraped: ANSA McAL Group of Companies
+2026-02-20 11:00:59,137 - INFO - Scraped: CIVIL ENGINEER
+2026-02-20 11:01:03,090 - INFO - Scraped: Professional Engineering Services
+2026-02-20 11:01:07,002 - INFO - Scraped: STRUCTURAL ENGINEER
+2026-02-20 11:01:10,779 - INFO - Scraped: Project Manager
+2026-02-20 11:01:15,321 - INFO - Scraped: RealDecoy
+2026-02-20 11:01:25,886 - INFO - Found 19 jobs for 'Software Developer'
+2026-02-20 11:01:28,275 - INFO - Scraped: Software Engineer/ Developer
+2026-02-20 11:01:33,227 - INFO - Scraped: Cloud Engineer
+2026-02-20 11:01:37,676 - INFO - Scraped: Associated Brands Industries Ltd
+2026-02-20 11:01:43,329 - INFO - Scraped: Integration Developer (Temp)
+2026-02-20 11:01:48,676 - INFO - Scraped: The Barbados Light & Power Company
+2026-02-20 11:02:02,993 - INFO - Scraped: Development Support Analyst – Insurance Application Services
+2026-02-20 11:02:07,557 - INFO - Scraped: Sagicor Group Jamaica Ltd.
+2026-02-20 11:02:12,356 - INFO - Scraped: DATA ENGINEER - ANSA McAL LIMITED
+2026-02-20 11:02:19,224 - INFO - Scraped: ANSA McAL Group of Companies
+2026-02-20 11:02:30,048 - INFO - Scraped: Lead - Software Quality Assurance Analyst
+2026-02-20 11:02:35,804 - INFO - Scraped: Project Manager
+2026-02-20 11:02:42,620 - INFO - Scraped: National Commercial Bank of Anguilla
+2026-02-20 11:02:48,465 - INFO - Scraped: SYSTEMS ADMINISTRATOR (MIS/IT 5)
+2026-02-20 11:02:53,147 - INFO - Scraped: The Casino Gaming Commission
+2026-02-20 11:02:59,296 - INFO - Scraped: CIVIL ENGINEER
+2026-02-20 11:03:03,260 - INFO - Scraped: Professional Engineering Services
+2026-02-20 11:03:21,363 - INFO - Scraped: STRUCTURAL ENGINEER
+2026-02-20 11:03:25,993 - INFO - Scraped: Project Manager
+2026-02-20 11:03:28,473 - INFO - Scraped: RealDecoy
+2026-02-20 11:03:41,437 - INFO - No jobs found for 'Backend Developer'
+2026-02-20 11:03:54,596 - INFO - No jobs found for 'Frontend Developer'
+2026-02-20 11:04:04,232 - INFO - No jobs found for 'Full Stack Developer'
+2026-02-20 11:04:15,344 - INFO - Found 7 jobs for 'Mobile Application Developer'
+2026-02-20 11:04:17,878 - INFO - Scraped: Software Engineer/ Developer
+2026-02-20 11:04:23,356 - INFO - Scraped: Cloud Engineer
+2026-02-20 11:04:28,912 - INFO - Scraped: Associated Brands Industries Ltd
+2026-02-20 11:04:32,299 - INFO - Scraped: Integration Developer (Temp)
+2026-02-20 11:04:35,247 - INFO - Scraped: The Barbados Light & Power Company
+2026-02-20 11:04:42,349 - INFO - Scraped: Development Support Analyst – Insurance Application Services
+2026-02-20 11:04:45,914 - INFO - Scraped: Sagicor Group Jamaica Ltd.
+2026-02-20 11:04:55,552 - INFO - No jobs found for 'Game Developer'
+2026-02-20 11:05:05,627 - INFO - Found 2 jobs for 'Embedded Systems Engineer'
+2026-02-20 11:05:07,486 - INFO - Scraped: JUNIOR ENGINEER - PROCESS CONTROL SYSTEMS
+2026-02-20 11:05:11,348 - INFO - Scraped: Automatic & Computers Systems Ltd.
+2026-02-20 11:05:21,186 - INFO - No jobs found for 'DevOps Engineer'
+2026-02-20 11:05:30,872 - INFO - Found 2 jobs for 'Cloud Engineer'
+2026-02-20 11:05:32,567 - INFO - Scraped: Cloud Engineer
+2026-02-20 11:05:36,486 - INFO - Scraped: Associated Brands Industries Ltd
+2026-02-20 11:05:47,396 - INFO - Found 13 jobs for 'IT Support Specialist'
+2026-02-20 11:05:48,836 - INFO - Scraped: Sales Representatives,  IT Tech.
+2026-02-20 11:05:51,314 - INFO - Scraped: Call Center Pros
+2026-02-20 11:05:55,452 - INFO - Scraped: ICT Technician
+2026-02-20 11:05:59,382 - INFO - Scraped: Jamaica Tertiary Education Commission
+2026-02-20 11:06:09,637 - INFO - Scraped: Development Support Analyst – Insurance Application Services
+2026-02-20 11:06:12,176 - INFO - Scraped: Sagicor Group Jamaica Ltd.
+2026-02-20 11:06:16,553 - INFO - Scraped: I.T. Technician
+2026-02-20 11:06:20,475 - INFO - Scraped: CrewsInn Hotel & Yachting Centre
+2026-02-20 11:06:25,416 - INFO - Scraped: IT Assistant
+2026-02-20 11:06:28,827 - INFO - Scraped: Blue Diamond Resorts
+2026-02-20 11:06:33,312 - INFO - Scraped: IT Application Support Specialist
+2026-02-20 11:06:36,612 - INFO - Scraped: Guardsman Group
+2026-02-20 11:06:40,467 - INFO - Scraped: IT Field Support Technician
+2026-02-20 11:06:53,621 - INFO - Found 13 jobs for 'Help Desk Technician'
+2026-02-20 11:06:56,137 - INFO - Scraped: Sales Representatives,  IT Tech.
+2026-02-20 11:06:59,972 - INFO - Scraped: Call Center Pros
+2026-02-20 11:07:12,470 - INFO - Scraped: ICT Technician
+2026-02-20 11:07:17,307 - INFO - Scraped: Jamaica Tertiary Education Commission
+2026-02-20 11:07:21,706 - INFO - Scraped: Development Support Analyst – Insurance Application Services
+2026-02-20 11:07:24,978 - INFO - Scraped: Sagicor Group Jamaica Ltd.
+2026-02-20 11:07:28,107 - INFO - Scraped: I.T. Technician
+2026-02-20 11:07:32,188 - INFO - Scraped: CrewsInn Hotel & Yachting Centre
+2026-02-20 11:07:37,338 - INFO - Scraped: IT Assistant
+2026-02-20 11:07:40,336 - INFO - Scraped: Blue Diamond Resorts
+2026-02-20 11:07:50,238 - INFO - Scraped: IT Application Support Specialist
+2026-02-20 11:07:53,742 - INFO - Scraped: Guardsman Group
+2026-02-20 11:08:04,180 - INFO - Scraped: IT Field Support Technician
+2026-02-20 11:08:18,448 - INFO - No jobs found for 'Network Administrator'
+2026-02-20 11:08:28,984 - INFO - Found 11 jobs for 'System Administrator'
+2026-02-20 11:08:30,769 - INFO - Scraped: SYSTEMS ADMINISTRATOR (MIS/IT 5)
+2026-02-20 11:08:33,184 - INFO - Scraped: The Casino Gaming Commission
+2026-02-20 11:08:38,841 - INFO - Scraped: Data Steward
+2026-02-20 11:08:43,773 - INFO - Scraped: S.M. Jaleel & Company Limited
+2026-02-20 11:08:47,077 - INFO - Scraped: Information Technology Specialist (Guyana)
+2026-02-20 11:08:51,235 - INFO - Scraped: IT Manager
+2026-02-20 11:08:55,822 - INFO - Scraped: Barbados Civil Aviation Authority
+2026-02-20 11:09:00,108 - INFO - Scraped: Compliance IT Audit Lead (JESS)
+2026-02-20 11:09:06,042 - INFO - Scraped: KPMG Jamaica (JESS)
+2026-02-20 11:09:09,363 - INFO - Scraped: Human Resources Generalist
+2026-02-20 11:09:15,038 - INFO - Scraped: The Crane (Millennium Investment Ltd)
+2026-02-20 11:09:27,010 - INFO - Found 2 jobs for 'Cybersecurity Analyst'
+2026-02-20 11:09:29,521 - INFO - Scraped: Security Operations Centre Analyst
+2026-02-20 11:09:32,230 - INFO - Scraped: Human Resource Management Unit
+2026-02-20 11:09:43,210 - INFO - Found 2 jobs for 'Information Security Analyst'
+2026-02-20 11:09:46,833 - INFO - Scraped: Security Operations Centre Analyst
+2026-02-20 11:09:49,498 - INFO - Scraped: Human Resource Management Unit
+2026-02-20 11:10:02,304 - INFO - Found 4 jobs for 'Database Administrator'
+2026-02-20 11:10:06,241 - INFO - Scraped: Database Administrator I
+2026-02-20 11:10:09,702 - INFO - Scraped: Brightstar Lottery
+2026-02-20 11:10:16,055 - INFO - Scraped: Manager, Information & Communication Technology (ICT)
+2026-02-20 11:10:20,349 - INFO - Scraped: Jamaica Tertiary Education Commission
+2026-02-20 11:10:33,815 - INFO - Found 2 jobs for 'IT Project Manager'
+2026-02-20 11:10:36,525 - INFO - Scraped: Technical Service Delivery Manager (Client & Account Manager) (All Parishes)
+2026-02-20 11:10:38,755 - INFO - Scraped: Influx
+2026-02-20 11:10:49,717 - INFO - Found 4 jobs for 'IT Operations Analyst'
+2026-02-20 11:10:51,037 - INFO - Scraped: TECHNICAL BUSINESS ANALYST (MIS/IT 5)
+2026-02-20 11:10:55,722 - INFO - Scraped: The Casino Gaming Commission
+2026-02-20 11:10:59,777 - INFO - Scraped: HRIS Analyst
+2026-02-20 11:11:04,721 - INFO - Scraped: Centerfield
+2026-02-20 11:11:14,940 - INFO - No jobs found for 'Infrastructure Engineer'
+2026-02-20 11:11:21,002 - INFO - No jobs found for 'Data Scientist'
+2026-02-20 11:11:29,723 - INFO - No jobs found for 'Machine Learning Engineer'
+2026-02-20 11:11:38,147 - INFO - No jobs found for 'AI Engineer'
+2026-02-20 11:11:47,098 - INFO - Found 5 jobs for 'Data Analyst'
+2026-02-20 11:11:48,711 - INFO - Scraped: Group Data Analyst
+2026-02-20 11:11:54,919 - INFO - Scraped: Data Steward
+2026-02-20 11:11:59,448 - INFO - Scraped: S.M. Jaleel & Company Limited
+2026-02-20 11:12:04,200 - INFO - Scraped: GROUP ANALYST – BUSINESS INTELLIGENCE (ACADO LIMITED)
+2026-02-20 11:12:10,576 - INFO - Scraped: Agostini Limited
+2026-02-20 11:12:22,817 - INFO - Found 2 jobs for 'Business Intelligence Analyst'
+2026-02-20 11:12:25,115 - INFO - Scraped: GROUP ANALYST – BUSINESS INTELLIGENCE (ACADO LIMITED)
+2026-02-20 11:12:27,300 - INFO - Scraped: Agostini Limited
+2026-02-20 11:12:37,823 - INFO - No jobs found for 'NLP Engineer'
+2026-02-20 11:12:48,716 - INFO - No jobs found for 'Computer Vision Engineer'
+2026-02-20 11:12:59,886 - INFO - Found 2 jobs for 'Data Engineer'
+2026-02-20 11:13:01,351 - INFO - Scraped: DATA ENGINEER - ANSA McAL LIMITED
+2026-02-20 11:13:04,245 - INFO - Scraped: ANSA McAL Group of Companies
+2026-02-20 11:13:17,380 - INFO - No jobs found for 'MLOps Engineer'
+2026-02-20 11:13:27,362 - INFO - No jobs found for 'Applied Scientist'
+2026-02-20 11:13:34,406 - INFO - Saved 109 total jobs to JSON
