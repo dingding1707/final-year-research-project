@@ -34,8 +34,15 @@ SEARCH_TERMS = {
     "ai_ml": [
         "Data Scientist", "Machine Learning Engineer", "AI Engineer", "Data Analyst", "Business Intelligence Analyst",
         "NLP Engineer", "Computer Vision Engineer", "Data Engineer", "MLOps Engineer", "Applied Scientist"
+    ],
+
+    "control_non_ict": [
+        "Registered Nurse", "Primary School Teacher", "Accountant", "HR Officer", "Sales Representative",
+        "Restaurant Manager", "Chef", "Warehouse Supervisor", "Construction Supervisor", "Pharmacist"
     ]
 }
+
+
 
 BASE_URL = "https://www.workopolis.com/jobsearch/find-jobs?ak={}"
 
