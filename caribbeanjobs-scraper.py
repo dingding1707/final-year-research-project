@@ -23,7 +23,7 @@ all_jobs = []
 
 # ── Logging Setup ──────────────────────────────────────────────────────────────
 logging.basicConfig(
-    filename='scraper.log',
+    filename='caribbeanjobs_scraper.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -166,7 +166,7 @@ def scrape_job_metadata(driver, job_url, category, search_term):
 # ── SAVE ALL JOBS TO SINGLE JSON ───────────────────────────────────────────────
 def save_all_jobs_json():
 
-    output_path = Path("data/raw/jobs.json")
+    output_path = Path("data/raw/caribbeanjobs_jobs.json")
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(output_path, "w", encoding="utf-8") as f:
