@@ -21,3 +21,6 @@ Thumbs.db
 
 # Selenium downloads/temp
 downloads/
+
+# 
+out/
