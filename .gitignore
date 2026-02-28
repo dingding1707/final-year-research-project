@@ -11,6 +11,7 @@ data/raw/
 *.csv
 *.xlsx
 *.json
+*.pdf
 
 # Logs
 *.log
@@ -24,3 +25,4 @@ downloads/
 
 # JSON data
 out/
+

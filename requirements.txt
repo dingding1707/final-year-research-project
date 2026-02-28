@@ -1,5 +1,6 @@
-selenium
-webdriver-manager
-pandas
-beautifulsoup4
-lxml
+selenium==4.18.1
+webdriver-manager==4.0.1
+pandas==2.2.1
+beautifulsoup4==4.12.3
+lxml==5.1.0
+PyMuPDF==1.23.26
