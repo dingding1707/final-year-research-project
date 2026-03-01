@@ -4,3 +4,7 @@ pandas==2.2.1
 beautifulsoup4==4.12.3
 lxml==5.1.0
 PyMuPDF==1.23.26
+spacy==3.7.4
+skillNer==1.0.3
+ipython==8.18.1
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
