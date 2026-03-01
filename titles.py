@@ -34,16 +34,5 @@ JOB_TITLES = [
     "Data Engineer",
     "MLOps Engineer",
     "Applied Scientist",
-
-    #Control Job Roles (10)
-    "Registered Nurse",
-    "Primary School Teacher",
-    "Accountant",
-    "Human Resources Officer",
-    "Sales Representative",
-    "Restaurant Manager",
-    "Chef",
-    "Warehouse Supervisor",
-    "Construction Supervisor",
-    "Pharmacist",
+    
 ]
