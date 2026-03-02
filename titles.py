@@ -34,5 +34,17 @@ JOB_TITLES = [
     "Data Engineer",
     "MLOps Engineer",
     "Applied Scientist",
-    
+
+    # Unrelated roles (10)
+    "Registered Nurse",
+    "Primary School Teacher",
+    "Accountant",
+    "Human Resources Officer",
+    "Sales Representative",
+    "Restaurant Manager",
+    "Chef",
+    "Warehouse Supervisor",
+    "Construction Supervisor",
+    "Pharmacist",
+
 ]
