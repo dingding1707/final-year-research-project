@@ -68,6 +68,19 @@ AI_ROLES = [
     "Applied Scientist",
 ]
 
+UNRELATED_ROLES = [
+    "Registered Nurse",
+    "Primary School Teacher",
+    "Accountant",
+    "Human Resources Officer",
+    "Sales Representative",
+    "Restaurant Manager",
+    "Chef",
+    "Warehouse Supervisor",
+    "Construction Supervisor",
+    "Pharmacist",
+]
+
 
 # ----------------------------
 # Cleaning regex
@@ -193,6 +206,10 @@ def infer_job_category(job_title: str, title_query: str) -> str:
         if any(r in c for c in candidates):
             return "IT"
 
+    for role in UNRELATED_ROLES:
+        r = role.lower()
+        if any(r in c for c in candidates):
+            return "Unrelated"
     return "Unknown"
 
 
