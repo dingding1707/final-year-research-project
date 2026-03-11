@@ -13,6 +13,8 @@ data/raw/
 *.xlsx
 *.json
 *.pdf
+*.jsonl
+*.png
 
 # Logs
 *.log
