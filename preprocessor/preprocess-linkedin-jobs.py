@@ -3,8 +3,8 @@
 Preprocess job descriptions for SkillNER-first methodology:
 Preprocessing -> Skill Extraction -> Topic Modelling -> Correlation
 
-Input : out/linkedin_jobs.jsonl
-Output: out/linkedin_jobs_preprocessed.jsonl
+Input : out/raw/linkedin_jobs.jsonl
+Output: out/process/linkedin_jobs_preprocessed.jsonl
 
 Output fields:
 - region
