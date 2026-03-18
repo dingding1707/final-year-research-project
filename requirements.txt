@@ -7,4 +7,7 @@ PyMuPDF==1.23.26
 spacy==3.7.4
 skillNer==1.0.3
 ipython==8.18.1
+genism==4.4.0
+matplotlib==3.9.4
+pandas==2.2.1
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
