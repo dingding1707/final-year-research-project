@@ -24,8 +24,8 @@ from typing import Any, Dict, Iterator, List
 # Configuration
 # -----------------------------
 
-INPUT_FILE = Path("out/outcomes_and_content.json")
-OUTPUT_FILE = Path("out/dcit_courses_preprocessed.jsonl")
+INPUT_FILE = Path("out/raw/outcomes_and_content.json")
+OUTPUT_FILE = Path("out/processed/dcit_courses_preprocessed.jsonl")
 
 
 # -----------------------------
@@ -179,11 +179,17 @@ def main() -> None:
     def gen_rows() -> Iterator[Dict[str, Any]]:
         for rec in data:
             course_code = (rec.get("course_code") or "").strip()
+            # course_name = (rec.get("course_name") or "").strip()
+            # thematic_area = (rec.get("thematic_area") or "").strip()
+            course_name = (rec.get("course_name") or rec.get("course_title") or "").strip()
+            thematic_areas = rec.get("thematic_areas") or rec.get("thematic_area") or []
             raw = flatten_record(rec)
             cleaned = clean_text(raw)
 
             yield {
                 "course_code": course_code,
+                "course_name": course_name,
+                "thematic_areas": thematic_areas,
                 "clean_text": cleaned,
             }
 

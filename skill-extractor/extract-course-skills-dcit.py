@@ -25,8 +25,10 @@ from skillNer.general_params import SKILL_DB
 from skillNer.skill_extractor_class import SkillExtractor
 
 
-INPUT_FILE = Path("out/dcit_courses_preprocessed.jsonl")
-OUTPUT_FILE = Path("out/dcit_courses_skills.jsonl")
+INPUT_FILE = Path("out/processed/dcit_courses_preprocessed.jsonl")
+OUTPUT_FILE = Path("out/skills/dcit_courses_skills.jsonl")
+OUTPUT_FILE1 = Path("out/final/cs_course_skills.jsonl")
+OUTPUT_FILE2 = Path("out/final/it_course_skills.jsonl")
 
 # You can switch to en_core_web_lg later for potentially better vectors,
 # but SkillNER works fine with sm too.
@@ -70,7 +72,7 @@ def collect_skills(annotations: Dict[str, Any]) -> List[str]:
                 best[key] = score
 
     ingest(full_matches)
-    ingest(ngram_scored)
+    # ingest(ngram_scored)
 
     # Sort by score desc, then alphabetical
     sorted_items: List[Tuple[str, float]] = sorted(best.items(), key=lambda x: (-x[1], x[0]))
@@ -97,6 +99,8 @@ def main() -> None:
     def gen_out() -> Iterator[Dict[str, Any]]:
         for rec in iter_jsonl(INPUT_FILE):
             course_code = (rec.get("course_code") or "").strip()
+            course_name = (rec.get("course_name") or "").strip()
+            thematic_areas = (rec.get("thematic_areas") or "") or []
             text_for_skills = (rec.get("clean_text") or "").strip()
 
             # If you still have underscores from earlier steps, convert to spaces.
@@ -108,7 +112,7 @@ def main() -> None:
                 continue
 
             if not text_for_skills:
-                yield {"course_code": course_code, "skills": []}
+                yield {"course_code": course_code, "course_name": course_name, "thematic_areas": thematic_areas, "skills": []}
                 continue
 
             annotations = skill_extractor.annotate(text_for_skills)
@@ -116,10 +120,28 @@ def main() -> None:
 
             yield {
                 "course_code": course_code,
+                "course_name": course_name,
+                "thematic_areas": thematic_areas,
                 "skills": skills,
             }
-
+    
+    # Write all courses
     write_jsonl(OUTPUT_FILE, gen_out())
+
+    # Filter CS courses
+    cs_rows = [
+        row for row in gen_out()
+        if "computer_science" in row.get("thematic_areas", [])
+    ]
+
+    # Filter IT courses
+    it_rows = [
+        row for row in gen_out()
+        if "information_technology" in row.get("thematic_areas", [])
+    ]
+
+    write_jsonl(OUTPUT_FILE1, cs_rows)
+    write_jsonl(OUTPUT_FILE2, it_rows)
     print(f"Done. Skills saved to: {OUTPUT_FILE.resolve()}")
 
 

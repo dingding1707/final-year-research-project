@@ -3,8 +3,8 @@
 Preprocess job descriptions for SkillNER-first methodology:
 Preprocessing -> Skill Extraction -> Topic Modelling -> Correlation
 
-Input : out/linkedin_jobs.jsonl
-Output: out/linkedin_jobs_preprocessed.jsonl
+Input : out/raw/linkedin_jobs.jsonl
+Output: out/process/linkedin_jobs_preprocessed.jsonl
 
 Output fields:
 - region
@@ -234,8 +234,8 @@ def write_jsonl(path: Path, records: List[Dict[str, Any]]) -> None:
 
 
 def main(
-    input_path: str = "out/linkedin_jobs.jsonl",
-    output_path: str = "out/linkedin_jobs_preprocessed.jsonl",
+    input_path: str = "out/raw/linkedin_jobs.jsonl",
+    output_path: str = "out/processed/linkedin_jobs_preprocessed.jsonl",
 ):
     input_file = Path(input_path)
     output_file = Path(output_path)
