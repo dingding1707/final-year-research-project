@@ -18,6 +18,7 @@ Output fields:
 """
 
 import json
+import re
 from pathlib import Path
 from typing import Any, Dict, Iterator, List, Tuple
 
@@ -36,6 +37,18 @@ INPUT_FILE = Path("data/processed/processed_jobs.jsonl")
 OUTPUT_FILE = Path("out/reeduk_skills.jsonl")
 
 SPACY_MODEL = "en_core_web_sm"
+
+# Keep important short skills
+VALID_SHORT_SKILLS = {"ai", "ml", "c", "r", "go", "c#", "c++"}
+
+# Explicit junk tokens
+INVALID_EXACT = {"e", "etc", "eg", "ie", "tools e", "san"}
+
+# Generic verbs to remove weak phrases
+GENERIC_WORDS = {
+    "build", "manage", "develop", "create", "support",
+    "maintain", "implement", "monitor", "design", "test"
+}
 
 
 # ==============================
@@ -60,6 +73,64 @@ def write_jsonl(path: Path, records: Iterator[Dict[str, Any]]) -> None:
     with path.open("w", encoding="utf-8") as f:
         for rec in records:
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
+# ==============================
+# SKILL CLEANING
+# ==============================
+
+def normalize_skill(skill: str) -> str:
+    s = skill.lower().strip()
+    replacements = {
+        "apis": "api",
+        "restful apis": "api",
+        "rest api": "api",
+        "data integrations": "data integration",
+        "systems": "system",
+        "cloud services": "cloud",
+        "sql azure": "azure sql",
+    }
+    return replacements.get(s, s)
+
+
+def is_valid_skill(skill: str) -> bool:
+    s = skill.strip().lower()
+    if not s:
+        return False
+    # ✅ keep valid short skills
+    if s in VALID_SHORT_SKILLS:
+        return True
+    # ❌ remove junk tokens
+    if s in INVALID_EXACT:
+        return False
+    # ❌ remove single chars
+    if len(s) == 1:
+        return False
+    # ❌ must contain at least one letter
+    if not any(c.isalpha() for c in s):
+        return False
+    words = s.split()
+    # ❌ remove long noisy phrases
+    if len(words) > 3:
+        return False
+    # ❌ remove purely generic phrases
+    if all(word in GENERIC_WORDS for word in words):
+        return False
+    # ❌ remove patterns like "a b"
+    if re.fullmatch(r"[a-z]\s*[a-z]?", s):
+        return False
+    return True
+
+
+def clean_skills(skills: List[str]) -> List[str]:
+    cleaned = []
+    for skill in skills:
+        s = normalize_skill(skill)
+        if not is_valid_skill(s):
+            continue
+        cleaned.append(s)
+    # Remove duplicates while preserving order
+    return list(dict.fromkeys(cleaned))
 
 
 # ==============================
@@ -88,6 +159,11 @@ def extract_unique_skills(annotation: Dict[str, Any]) -> List[str]:
                 continue
 
             score = float(it.get("score", 0.0) or 0.0)
+
+            # 🔴 Remove low-confidence noise
+            if score < 0.5:
+                continue
+
             key = name.lower()
 
             if key not in best or score > best[key]:
@@ -157,7 +233,8 @@ def main(
             if text_for_skillner:
                 try:
                     annotation = skill_extractor.annotate(text_for_skillner)
-                    skills = extract_unique_skills(annotation)
+                    raw_skills = extract_unique_skills(annotation)
+                    skills = clean_skills(raw_skills)
                 except Exception as e:
                     print(f"[WARN] Skill extraction failed for job_title={job_title!r}: {e}")
                     skills = []
