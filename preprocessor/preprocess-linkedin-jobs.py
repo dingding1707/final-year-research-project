@@ -234,8 +234,8 @@ def write_jsonl(path: Path, records: List[Dict[str, Any]]) -> None:
 
 
 def main(
-    input_path: str = "out/raw/linkedin_jobs.jsonl",
-    output_path: str = "out/processed/linkedin_jobs_preprocessed.jsonl",
+    input_path: str = "data/raw/linkedin_jobs.jsonl",
+    output_path: str = "data/processed/linkedin_jobs_preprocessed.jsonl",
 ):
     input_file = Path(input_path)
     output_file = Path(output_path)
