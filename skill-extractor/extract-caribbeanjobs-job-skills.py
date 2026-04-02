@@ -205,6 +205,7 @@ def main():
             continue
 
         job_category = rec.get("job_category")
+        search_term = rec.get("search_term")
         job_title = rec.get("job_title")
 
         text = (rec.get("clean_text") or "").replace("_", " ").strip()
@@ -226,6 +227,7 @@ def main():
         records.append({
             "region": region,
             "job_category": job_category,
+            "search_term" : search_term,
             "job_title": job_title,
             "skills": skills,
         })

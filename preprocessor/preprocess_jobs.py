@@ -229,6 +229,7 @@ def preprocess_jobs():
             processed_job = {
                 "region": region,
                 "job_category": job.get("category"),
+                "search_term": job.get("search_term") or job.get("searched_role"),
                 "job_title": job.get("title") or job.get("job_title"),
                 "url": url,
                 "clean_text": clean_text_str
