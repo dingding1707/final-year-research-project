@@ -39,3 +39,5 @@ downloads/
 out/
 data/
 
+data/processed/processed_jobs.jsonl
+processed_jobs.jsonl

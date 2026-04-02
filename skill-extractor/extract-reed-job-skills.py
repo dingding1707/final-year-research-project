@@ -222,6 +222,7 @@ def main(
                 continue
 
             job_category = rec.get("job_category")
+            search_term = rec.get("search_term")
             job_title = rec.get("job_title")
             text_for_skillner = (rec.get("clean_text") or "").strip()
 
@@ -241,6 +242,7 @@ def main(
 
             yield {
                 "region": region,
+                "search_term": search_term,
                 "job_category": job_category,
                 "job_title": job_title,
                 "skills": skills,

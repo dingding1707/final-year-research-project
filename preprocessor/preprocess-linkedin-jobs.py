@@ -249,7 +249,7 @@ def main(
     for rec in read_jsonl(input_file):
         region = rec.get("region")
         job_title = rec.get("job_title", "")
-        title_query = rec.get("title_query", "")
+        title_query = rec.get("title_query")
         raw_desc = rec.get("description", "")
 
         job_category = infer_job_category(job_title=job_title, title_query=title_query)
@@ -259,6 +259,7 @@ def main(
             {
                 "region": region,
                 "job_category": job_category,
+                "search_term": title_query,
                 "job_title": job_title,
                 "clean_text": cleaned,
             }

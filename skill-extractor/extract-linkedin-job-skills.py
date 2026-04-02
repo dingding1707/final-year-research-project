@@ -224,6 +224,7 @@ def main(
 
             yield {
                 "region": region,
+                "search_term": rec.get("search_term"),
                 "job_category": job_category,
                 "job_title": job_title,
                 "skills": skills,
