@@ -72,8 +72,6 @@ Measure curriculum-industry alignment by comparing job-skill documents against c
 
 - Notebook: `notebooks/closeness-metric.ipynb`
 - Includes CS and IT alignment flows and weighted summaries.
-- Additional diagnostics notebook:
-	- `notebooks/result-evaluation.ipynb` for granular topic-to-job inspection.
 
 ## Repository Layout
 
@@ -86,7 +84,6 @@ Measure curriculum-industry alignment by comparing job-skill documents against c
 │   ├── coherence-score.ipynb
 │   ├── lda-topic-modelling.ipynb
 │   ├── thematic-count.ipynb
-│   └── result-evaluation.ipynb
 ├── preprocessor/
 ├── scraper/
 ├── skill-extractor/
@@ -153,7 +150,6 @@ Open and run:
 Open and run:
 
 - `notebooks/closeness-metric.ipynb`
-- `notebooks/result-evaluation.ipynb` (optional deeper analysis)
 
 ## Reproducibility Notes
 
