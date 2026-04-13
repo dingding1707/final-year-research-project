@@ -168,3 +168,9 @@ This repository is intended as a methodological and reproducible pipeline.
 ## License and Usage
 
 If this repository is used in publications or derivatives, cite the project context appropriately and respect source data terms for scraped job data.
+
+## Dashboard Repository Link 
+
+To present findings, a deployed streamlit app was created. The link for the repository and the deployed application is attached below:
+- Repository: https://github.com/DenelleMohammed/final-year-project-dashboard.git
+- Deployed App: https://daria-and-denelle-fyp.streamlit.app/Information_Technology
