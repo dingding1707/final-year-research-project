@@ -8,7 +8,6 @@ This folder contains analysis notebooks for topic quality and curriculum-industr
 - `closeness-metric.ipynb`: Computes curriculum-industry closeness/alignment metrics.
 - `lda-topic-modelling.ipynb`: Topic modeling exploration.
 - `thematic-count.ipynb`: Thematic/statistical summaries.
-- `result-evaluation.ipynb`: Granular diagnostics (topic-to-job and job-level breakdowns).
 
 ## How to use
 
